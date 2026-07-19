@@ -37,7 +37,7 @@ let text = document.getElementById("input").value;
 if(!text) return alert("Enter text");
 document.getElementById("result").innerText = "Processing...";
 try {
-const res = await fetch("https://models.github.ai/inference/chat/completions", {
+const res = await fetch("https://api.deepseek.com/chat/completions", {
 method: "POST",
 headers: {
 "Content-Type": "application/json",
